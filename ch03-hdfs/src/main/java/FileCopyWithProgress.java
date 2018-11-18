@@ -14,8 +14,8 @@ import org.apache.hadoop.util.Progressable;
 // vv FileCopyWithProgress
 public class FileCopyWithProgress {
   public static void main(String[] args) throws Exception {
-    String localSrc = args[0];
-    String dst = args[1];
+    String localSrc = "/workspace/asu/eclipse-workspace/hadoop-book/ch03-hdfs/input.txt"; // args[0];
+    String dst = "hdfs://localhost:9000/user/ch02/input/input.txt"; // args[1];
     
     InputStream in = new BufferedInputStream(new FileInputStream(localSrc));
     
